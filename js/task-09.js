@@ -8,7 +8,7 @@ changeColorRef.addEventListener('click', onButtonClick);
 
 function onButtonClick() {
   bodyRef.setAttribute('style', `background-color: ${getRandomHexColor()};`);
-  colorRef.textContent = bodyRef.style;
+  colorRef.textContent = bodyRef.style.backgroundColor;
 }
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
